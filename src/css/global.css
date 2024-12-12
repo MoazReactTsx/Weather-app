@@ -1,0 +1,217 @@
+:root{
+    --white : #fff;
+    --main-bg :#0d1623;
+    --main-color : #d13db0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    background-color: #262936;
+    color:var(--white);
+}
+
+
+.program {
+    padding: 2rem 0;
+}
+.program:not(:first-child){
+    border-top: 1px dashed var(--white);
+}
+hr{
+    
+    border-top: 1px solid var(--white);
+    opacity: 1;
+}
+.page-title {
+    text-align: center;
+}
+.page-title h2{
+    font-size: 3rem;
+    /* text-shadow: 1px -2px #d13db0; */
+    color: var(--white);
+}
+label{
+    color: var(--white);
+}
+
+/*  from https://getcssscan.com/css-buttons-examples  (¬_¬")*/
+.main-btn {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.main-btn:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.main-btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.main-btn:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+body {
+    background: #1c1c1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background: #2c2c2e;
+}
+
+
+
+
+.hero {
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 350px;
+    background-image: url('../images/banner.png');
+}
+
+
+.cards-container.container {
+    transform: translateY(-125px);
+}
+.search-bar {
+    text-align: center;
+    position: relative;
+    margin-bottom: 70px;
+}
+[type="text"] {
+    width: 100%;
+    background: #1e202b;
+    color: white;
+    padding: 8px 50px 13px 20px;
+    border-radius: 45px;
+}
+[type="text"]:focus {
+    
+    background: #1e202b;
+    color: white;
+}
+[type="text"]::placeholder{
+    color: white;
+}
+.search-bar .container{
+    position: relative;
+}
+.search-bar .btn{
+    position: absolute;
+    top: 5px;
+    right: 21px;
+    bottom: 5px;
+    padding: 0px 40px;
+    border-radius: 42px;
+}
+.forecast-card {
+    background: #323544;
+    padding: 20px;
+    position: relative;
+    
+    height: 100%;
+}
+.forecast-card.second{
+    background: #262936;
+}
+.forecast-header {
+    background-color: #44475a;
+    border-radius: 8px ;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    -webkit-border-radius: 8px ;
+    -moz-border-radius: 8px ;
+    -ms-border-radius: 8px ;
+    -o-border-radius: 8px ;
+}
+.forecast-date {
+    font-size: 0.9rem;
+    color: #a9a9a9;
+    margin-top: -5px;
+}
+.forecast-card img {
+    width: 70px;
+    height: auto;
+    margin: 10px auto;
+}
+.forecast-details p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+.forecast-details {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.forecast-details img{
+    width: 21px;
+} 
+
+.main-col{
+    padding-inline:0px ;
+}
+
+footer{
+    background-color: #262936;
+    padding-block: 40px ;
+    min-height: 40vh;
+    text-align: center;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-block: 20px;
+}
+.social-media a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-size: 20px;
+    font-size: 1.4em;
+}

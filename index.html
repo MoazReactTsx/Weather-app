@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Frijole&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <script src="./src/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./src/css/global.css">
+    <script src="https://kit.fontawesome.com/92c7a83d65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">Weather</a>
+            
+            <!-- Toggle Button for Collapsed Menu -->
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="search-bar">
+            <div class="container">
+                <input id="location" type="text" class="form-control d-inline-block w-100" placeholder="Find your location...">
+                <button onclick="searchWeather()" class="btn btn-primary ms-2">Find</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="cards-container container">
+        <div class="row text-center" id="forecast">
+            <!-- Dynamic Weather Cards will be inserted here -->
+        </div>
+    </div>
+
+    <!-- footer -->
+     <footer>
+        <div class="container">
+            <!-- social media -->
+            <div class="social-media ">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p class="copyright">&copy; 2023 Weather App. All rights reserved.</p>
+        </div>
+     </footer>
+
+    <script src="./src/js/index.js"></script>
+
+</body>
+</html>
